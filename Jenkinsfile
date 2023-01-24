@@ -9,6 +9,7 @@ pipeline {
         stage("ssh"){
             steps{
                 sh "ssh neta@172.16.100.95"
+                sh "ls -a"
             }
         }
     }
