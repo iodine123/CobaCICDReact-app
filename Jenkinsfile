@@ -1,9 +1,14 @@
 pipeline {
     agent any
     stages {
-        stage("Step 1"){
+        stage("Cek normal"){
             steps {
                 sh "echo 'Hello World'"
+            }
+        }
+        stage("ssh"){
+            steps{
+                sh "ssh neta@172.16.100.95"
             }
         }
     }
